@@ -3,10 +3,9 @@ package com.jamesorban.mygamestore.App;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-import pl.myGamesLibrary.database.dbuitls.DBManager;
-import pl.myGamesLibrary.utils.FillDatabase;
-import pl.myGamesLibrary.utils.FxmlUtils;
+import com.jamesorban.mygamestore.database.dbutils.DBManager;
+import com.jamesorban.mygamestore.utils.FillDatabase;
+import com.jamesorban.mygamestore.utils.FxmlUtils;
 
 
 public class Application extends javafx.application.Application {
