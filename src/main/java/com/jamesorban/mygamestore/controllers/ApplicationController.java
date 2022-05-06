@@ -21,7 +21,7 @@ public class ApplicationController {
 
     @FXML
     public void initialize(){
-        setLanguage("ang");
+        setLanguage("eng");
         loadScreen();
     }
 

@@ -23,7 +23,7 @@ import static javafx.application.Application.STYLESHEET_MODENA;
 
 public class MainController {
 
-    public static final String MY_GAMES_LIBRARY_FXML = "/fxml/MyGamesLibrary.fxml";
+    public static final String MY_GAMES_STORE_FXML = "/fxml/MyGamesLibrary.fxml";
 
     @FXML
     private BorderPane borderPane;
@@ -40,8 +40,8 @@ public class MainController {
     }
 
     public void setCenter(String fxmlPath) {
-        if (fxmlPath.equals(MY_GAMES_LIBRARY_FXML)){
-            FXMLLoader loader = FxmlUtils.getLoader(MY_GAMES_LIBRARY_FXML);
+        if (fxmlPath.equals(MY_GAMES_STORE_FXML)){
+            FXMLLoader loader = FxmlUtils.getLoader(MY_GAMES_STORE_FXML);
             Pane pane = new Pane();
             try {
                 pane = loader.load();

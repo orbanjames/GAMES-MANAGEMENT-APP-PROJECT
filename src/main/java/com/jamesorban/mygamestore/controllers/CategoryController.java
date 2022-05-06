@@ -72,7 +72,7 @@ public class CategoryController {
         Optional<ButtonType> result = DialogUtils.confirmationDialog("delete.category.title", "delete.category.header", "delete.category.content");
         if(result.get() == ButtonType.OK){
             try {
-                this.categoryModel.deleteCatogoryById();
+                this.categoryModel.deleteCategoryById();
             } catch (ApplicationException | SQLException e) {
                 DialogUtils.errorDialog(e.getMessage());
             }

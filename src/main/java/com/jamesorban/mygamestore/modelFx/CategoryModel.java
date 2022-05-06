@@ -52,7 +52,7 @@ public class CategoryModel {
         });
     }
 
-    public void deleteCatogoryById() throws ApplicationException, SQLException {
+    public void deleteCategoryById() throws ApplicationException, SQLException {
         CategoryDao categoryDao = new CategoryDao();
         categoryDao.deleteById(Category.class, this.category.getValue().getId());
 
