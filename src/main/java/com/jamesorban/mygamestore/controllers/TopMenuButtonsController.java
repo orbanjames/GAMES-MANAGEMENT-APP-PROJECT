@@ -11,6 +11,8 @@ public class TopMenuButtonsController {
     public static final String ADD_BOOK_FXML = "/fxml/AddGame.fxml";
     public static final String ADD_CATEGORY_FXML = "/fxml/AddCategory.fxml";
     public static final String ADD_AUTHOR_FXML = "/fxml/AddAuthor.fxml";
+    public static final String PLAY_GAME_FXML = "/fxml/MineSweeper.fxml";
+
 
     private MainController mainController;
 
@@ -40,6 +42,11 @@ public class TopMenuButtonsController {
     @FXML
     public void addAuthor() {
         this.mainController.setCenter(ADD_AUTHOR_FXML);
+    }
+
+    @FXML
+    public void playGame() {
+        this.mainController.setCenter(PLAY_GAME_FXML);
     }
 
     public void setMainController(MainController mainController) {
