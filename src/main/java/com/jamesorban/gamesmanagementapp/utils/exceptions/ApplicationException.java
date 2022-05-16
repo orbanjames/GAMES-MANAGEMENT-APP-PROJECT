@@ -1,4 +1,4 @@
-package com.jamesorban.mygamestore.utils.exceptions;
+package com.jamesorban.gamesmanagementapp.utils.exceptions;
 
 public class ApplicationException extends Exception{
 

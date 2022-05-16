@@ -1,11 +1,11 @@
-package com.jamesorban.mygamestore.App;
+package com.jamesorban.gamesmanagementapp.App;
 
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import com.jamesorban.mygamestore.database.dbutils.DBManager;
-import com.jamesorban.mygamestore.utils.FillDatabase;
-import com.jamesorban.mygamestore.utils.FxmlUtils;
+import com.jamesorban.gamesmanagementapp.database.dbutils.DBManager;
+import com.jamesorban.gamesmanagementapp.utils.FillDatabase;
+import com.jamesorban.gamesmanagementapp.utils.FxmlUtils;
 
 
 public class Application extends javafx.application.Application {
@@ -27,6 +27,6 @@ public class Application extends javafx.application.Application {
 
 
         DBManager.initDatabase();
-        FillDatabase.fillDatabase(); //here an additional code is launched that fills the database
+        FillDatabase.fillDatabase();
     }
 }
