@@ -1,4 +1,4 @@
-package com.jamesorban.mygamestore.controllers;
+package com.jamesorban.gamesmanagementapp.controllers;
 
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXML;
@@ -9,13 +9,13 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import com.jamesorban.mygamestore.modelFx.AuthorFx;
-import com.jamesorban.mygamestore.modelFx.CategoryFx;
-import com.jamesorban.mygamestore.modelFx.GameFx;
-import com.jamesorban.mygamestore.modelFx.GamesListModel;
-import com.jamesorban.mygamestore.utils.DialogUtils;
-import com.jamesorban.mygamestore.utils.FxmlUtils;
-import com.jamesorban.mygamestore.utils.exceptions.ApplicationException;
+import com.jamesorban.gamesmanagementapp.modelFx.AuthorFx;
+import com.jamesorban.gamesmanagementapp.modelFx.CategoryFx;
+import com.jamesorban.gamesmanagementapp.modelFx.GameFx;
+import com.jamesorban.gamesmanagementapp.modelFx.GamesListModel;
+import com.jamesorban.gamesmanagementapp.utils.DialogUtils;
+import com.jamesorban.gamesmanagementapp.utils.FxmlUtils;
+import com.jamesorban.gamesmanagementapp.utils.exceptions.ApplicationException;
 
 import java.io.IOException;
 import java.sql.SQLException;

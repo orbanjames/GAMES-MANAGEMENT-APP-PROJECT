@@ -1,4 +1,4 @@
-package com.jamesorban.mygamestore.database.dao;
+package com.jamesorban.gamesmanagementapp.database.dao;
 
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.dao.DaoManager;
@@ -6,21 +6,21 @@ import com.j256.ormlite.logger.Logger;
 import com.j256.ormlite.logger.LoggerFactory;
 import com.j256.ormlite.stmt.QueryBuilder;
 import com.j256.ormlite.support.ConnectionSource;
-import com.jamesorban.mygamestore.database.dbutils.DBManager;
-import com.jamesorban.mygamestore.database.models.BaseModel;
-import com.jamesorban.mygamestore.utils.FxmlUtils;
-import com.jamesorban.mygamestore.utils.exceptions.ApplicationException;
+import com.jamesorban.gamesmanagementapp.database.dbutils.DBManager;
+import com.jamesorban.gamesmanagementapp.database.models.BaseModel;
+import com.jamesorban.gamesmanagementapp.utils.FxmlUtils;
+import com.jamesorban.gamesmanagementapp.utils.exceptions.ApplicationException;
 
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-public abstract class CommonDao {
+public abstract class GeneralDao {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(CommonDao.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(GeneralDao.class);
     protected final ConnectionSource connectionSource;
 
-    public CommonDao() {
+    public GeneralDao() {
         this.connectionSource = DBManager.getConnectionSource();
     }
 
