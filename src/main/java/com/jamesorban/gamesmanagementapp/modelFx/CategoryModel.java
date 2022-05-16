@@ -1,20 +1,18 @@
-package com.jamesorban.mygamestore.modelFx;
+package com.jamesorban.gamesmanagementapp.modelFx;
 
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TreeItem;
-import com.jamesorban.mygamestore.database.dao.CategoryDao;
-import com.jamesorban.mygamestore.database.dao.GameDao;
-import com.jamesorban.mygamestore.database.dao.ProductDao;
-import com.jamesorban.mygamestore.database.dbutils.DBManager;
-import com.jamesorban.mygamestore.database.models.Category;
-import com.jamesorban.mygamestore.database.models.Game;
-import com.jamesorban.mygamestore.database.models.Product;
-import com.jamesorban.mygamestore.utils.converters.ConverterCategory;
-import com.jamesorban.mygamestore.utils.exceptions.ApplicationException;
-import sun.reflect.generics.tree.Tree;
+import com.jamesorban.gamesmanagementapp.database.dao.CategoryDao;
+import com.jamesorban.gamesmanagementapp.database.dao.GameDao;
+import com.jamesorban.gamesmanagementapp.database.dao.ProductDao;
+import com.jamesorban.gamesmanagementapp.database.models.Category;
+import com.jamesorban.gamesmanagementapp.database.models.Game;
+import com.jamesorban.gamesmanagementapp.database.models.Product;
+import com.jamesorban.gamesmanagementapp.utils.converters.ConverterCategory;
+import com.jamesorban.gamesmanagementapp.utils.exceptions.ApplicationException;
 
 import java.sql.SQLException;
 import java.util.List;

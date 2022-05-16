@@ -1,7 +1,7 @@
-package com.jamesorban.mygamestore.utils.converters;
+package com.jamesorban.gamesmanagementapp.utils.converters;
 
-import com.jamesorban.mygamestore.database.models.Category;
-import com.jamesorban.mygamestore.modelFx.CategoryFx;
+import com.jamesorban.gamesmanagementapp.database.models.Category;
+import com.jamesorban.gamesmanagementapp.modelFx.CategoryFx;
 
 public class ConverterCategory {
 

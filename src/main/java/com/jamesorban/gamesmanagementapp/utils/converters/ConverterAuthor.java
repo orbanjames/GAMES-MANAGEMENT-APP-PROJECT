@@ -1,7 +1,7 @@
-package com.jamesorban.mygamestore.utils.converters;
+package com.jamesorban.gamesmanagementapp.utils.converters;
 
-import com.jamesorban.mygamestore.database.models.Author;
-import com.jamesorban.mygamestore.modelFx.AuthorFx;
+import com.jamesorban.gamesmanagementapp.database.models.Author;
+import com.jamesorban.gamesmanagementapp.modelFx.AuthorFx;
 
 public class ConverterAuthor {
 
