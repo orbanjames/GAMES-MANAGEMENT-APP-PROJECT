@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jamesorban.mygamestore.controllers.CategoryController">
+<VBox minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jamesorban.gamesmanagementapp.controllers.CategoryController">
     <children>
         <HBox alignment="TOP_CENTER" minHeight="-Infinity" minWidth="-Infinity" spacing="20.0">
             <children>
