@@ -1,12 +1,12 @@
-package com.jamesorban.mygamestore.controllers;
+package com.jamesorban.gamesmanagementapp.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.TextFieldTableCell;
-import com.jamesorban.mygamestore.modelFx.AuthorFx;
-import com.jamesorban.mygamestore.modelFx.AuthorModel;
-import com.jamesorban.mygamestore.utils.DialogUtils;
-import com.jamesorban.mygamestore.utils.exceptions.ApplicationException;
+import com.jamesorban.gamesmanagementapp.modelFx.AuthorFx;
+import com.jamesorban.gamesmanagementapp.modelFx.AuthorModel;
+import com.jamesorban.gamesmanagementapp.utils.DialogUtils;
+import com.jamesorban.gamesmanagementapp.utils.exceptions.ApplicationException;
 
 import java.sql.SQLException;
 import java.util.Optional;
