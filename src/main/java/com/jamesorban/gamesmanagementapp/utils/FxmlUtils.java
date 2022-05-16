@@ -1,4 +1,4 @@
-package com.jamesorban.mygamestore.utils;
+package com.jamesorban.gamesmanagementapp.utils;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;

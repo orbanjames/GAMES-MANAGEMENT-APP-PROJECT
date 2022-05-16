@@ -1,4 +1,4 @@
-package com.jamesorban.mygamestore.modelFx;
+package com.jamesorban.gamesmanagementapp.modelFx;
 
 import javafx.beans.property.*;
 

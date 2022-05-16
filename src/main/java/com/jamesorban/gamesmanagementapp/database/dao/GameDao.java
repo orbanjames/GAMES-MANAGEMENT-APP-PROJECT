@@ -1,18 +1,16 @@
-package com.jamesorban.mygamestore.database.dao;
+package com.jamesorban.gamesmanagementapp.database.dao;
 
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.stmt.DeleteBuilder;
 import com.j256.ormlite.stmt.PreparedQuery;
 import com.j256.ormlite.stmt.QueryBuilder;
-import com.j256.ormlite.support.ConnectionSource;
-import com.jamesorban.mygamestore.database.models.Game;
-import com.jamesorban.mygamestore.database.models.Product;
-import com.jamesorban.mygamestore.utils.exceptions.ApplicationException;
+import com.jamesorban.gamesmanagementapp.database.models.Game;
+import com.jamesorban.gamesmanagementapp.utils.exceptions.ApplicationException;
 
 import java.sql.SQLException;
 import java.util.List;
 
-public class GameDao extends CommonDao {
+public class GameDao extends GeneralDao {
 
     public GameDao( ) {
         super();

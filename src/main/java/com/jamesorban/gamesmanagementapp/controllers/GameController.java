@@ -1,13 +1,12 @@
-package com.jamesorban.mygamestore.controllers;
+package com.jamesorban.gamesmanagementapp.controllers;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import com.jamesorban.mygamestore.modelFx.AuthorFx;
-import com.jamesorban.mygamestore.modelFx.CategoryFx;
-import com.jamesorban.mygamestore.modelFx.GameModel;
-import com.jamesorban.mygamestore.utils.DialogUtils;
-import com.jamesorban.mygamestore.utils.exceptions.ApplicationException;
+import com.jamesorban.gamesmanagementapp.modelFx.AuthorFx;
+import com.jamesorban.gamesmanagementapp.modelFx.CategoryFx;
+import com.jamesorban.gamesmanagementapp.modelFx.GameModel;
+import com.jamesorban.gamesmanagementapp.utils.DialogUtils;
+import com.jamesorban.gamesmanagementapp.utils.exceptions.ApplicationException;
 
 public class GameController {
 
@@ -49,12 +48,6 @@ public class GameController {
         this.categoryComboBox.setItems(this.gameModel.getCategoryFxObservableList());
         this.authorComboBox.setItems(this.gameModel.getAuthorFxObservableList());
 
-//        this.gameModel.getGameFxObjectProperty().titleProperty().bind(this.titleTextField.textProperty());
-//        this.gameModel.getGameFxObjectProperty().categoryFxProperty().bind(this.categoryComboBox.valueProperty());
-//        this.gameModel.getGameFxObjectProperty().authorFxProperty().bind(this.authorComboBox.valueProperty());
-//        this.gameModel.getGameFxObjectProperty().descriptionProperty().bind(this.descTextArea.textProperty());
-//        this.gameModel.getGameFxObjectProperty().ratingProperty().bind(this.ratingSlider.valueProperty());
-//        this.gameModel.getGameFxObjectProperty().releaseDateProperty().bind(this.releaseDatePicker.valueProperty());
 
         this.authorComboBox.valueProperty().bindBidirectional(this.gameModel.getGameFxObjectProperty().authorFxProperty());
         this.categoryComboBox.valueProperty().bindBidirectional(this.gameModel.getGameFxObjectProperty().categoryFxProperty());
