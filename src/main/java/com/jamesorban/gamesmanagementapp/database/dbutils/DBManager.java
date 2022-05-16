@@ -1,13 +1,12 @@
-package com.jamesorban.mygamestore.database.dbutils;
+package com.jamesorban.gamesmanagementapp.database.dbutils;
 
 import com.j256.ormlite.jdbc.JdbcConnectionSource;
 import com.j256.ormlite.logger.Logger;
 import com.j256.ormlite.logger.LoggerFactory;
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
-import com.jamesorban.mygamestore.database.models.*;
+import com.jamesorban.gamesmanagementapp.database.models.*;
 
-import javax.jws.soap.SOAPBinding;
 import java.io.IOException;
 import java.sql.SQLException;
 
@@ -24,8 +23,8 @@ public class DBManager {
 
     public static void initDatabase() {
         createConnectionSource();
-        dropTable(); //comment out, to delete tables in the database every time
         createTable();
+        updateTable(); //comment out, to update tables in the database every time
         closeConnectionSource();
     }
 
@@ -68,13 +67,13 @@ public class DBManager {
         }
     }
 
-    private  static  void  dropTable(){
+    private  static  void  updateTable(){
         try {
-            TableUtils.dropTable(connectionSource, Author.class, true);
-            TableUtils.dropTable(connectionSource, Game.class, true);
-            TableUtils.dropTable(connectionSource, Category.class, true);
-            TableUtils.dropTable(connectionSource, User.class, true);
-            TableUtils.dropTable(connectionSource, Product.class, true);
+            TableUtils.updateTable(connectionSource, Author.class, true);
+            TableUtils.updateTable(connectionSource, Game.class, true);
+            TableUtils.updateTable(connectionSource, Category.class, true);
+            TableUtils.updateTable(connectionSource, User.class, true);
+            TableUtils.updateTable(connectionSource, Product.class, true);
         } catch (SQLException e) {
             LOGGER.warn(e.getMessage());
         }

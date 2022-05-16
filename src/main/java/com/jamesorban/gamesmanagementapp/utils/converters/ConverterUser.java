@@ -1,14 +1,14 @@
-package com.jamesorban.mygamestore.utils.converters;
+package com.jamesorban.gamesmanagementapp.utils.converters;
 
-import com.jamesorban.mygamestore.database.models.User;
-import com.jamesorban.mygamestore.modelFx.UserFx;
-import com.jamesorban.mygamestore.utils.Utils;
+import com.jamesorban.gamesmanagementapp.database.models.User;
+import com.jamesorban.gamesmanagementapp.modelFx.UserFx;
+import com.jamesorban.gamesmanagementapp.utils.Utils;
 
 public class ConverterUser {
 
     public static User convertToUser(UserFx userFx){
         User user = new User();
-        user.setNick(userFx.getNick());
+        user.setUserName(userFx.getUserName());
         user.setEmail(userFx.getEmail());
         user.setPassword(userFx.getPassword());
         user.setLanguage(userFx.getLanguage());
@@ -18,7 +18,7 @@ public class ConverterUser {
 
     public  static UserFx convertToUserFx(User user){
         UserFx userFx = new UserFx();
-        userFx.setNick(user.getNick());
+        userFx.setUserName(user.getUserName());
         userFx.setEmail(user.getEmail());
         userFx.setPassword(user.getPassword());
         userFx.setLanguage(user.getLanguage());

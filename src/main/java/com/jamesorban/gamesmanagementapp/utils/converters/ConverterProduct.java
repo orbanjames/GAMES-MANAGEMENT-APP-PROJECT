@@ -1,7 +1,7 @@
-package com.jamesorban.mygamestore.utils.converters;
+package com.jamesorban.gamesmanagementapp.utils.converters;
 
-import com.jamesorban.mygamestore.database.models.Product;
-import com.jamesorban.mygamestore.modelFx.ProductFx;
+import com.jamesorban.gamesmanagementapp.database.models.Product;
+import com.jamesorban.gamesmanagementapp.modelFx.ProductFx;
 
 public class ConverterProduct {
 

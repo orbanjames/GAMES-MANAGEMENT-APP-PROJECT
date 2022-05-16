@@ -1,4 +1,4 @@
-package com.jamesorban.mygamestore.utils;
+package com.jamesorban.gamesmanagementapp.utils;
 
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;

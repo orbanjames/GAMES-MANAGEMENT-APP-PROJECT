@@ -1,11 +1,11 @@
-package com.jamesorban.mygamestore.utils;
+package com.jamesorban.gamesmanagementapp.utils;
 
-import com.jamesorban.mygamestore.database.dao.CategoryDao;
-import com.jamesorban.mygamestore.database.dao.GameDao;
-import com.jamesorban.mygamestore.database.dao.ProductDao;
-import com.jamesorban.mygamestore.database.dao.UserDao;
-import com.jamesorban.mygamestore.database.models.*;
-import com.jamesorban.mygamestore.utils.exceptions.ApplicationException;
+import com.jamesorban.gamesmanagementapp.database.dao.CategoryDao;
+import com.jamesorban.gamesmanagementapp.database.dao.GameDao;
+import com.jamesorban.gamesmanagementapp.database.dao.ProductDao;
+import com.jamesorban.gamesmanagementapp.database.dao.UserDao;
+import com.jamesorban.gamesmanagementapp.database.models.*;
+import com.jamesorban.gamesmanagementapp.utils.exceptions.ApplicationException;
 
 import java.util.Date;
 
@@ -131,14 +131,14 @@ public class FillDatabase {
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         User user0 = new User();
-        user0.setNick("TypicalUser");
+        user0.setUserName("TypicalUser");
         user0.setEmail("typical.user@xyz.com");
         user0.setLanguage("ANG");
         user0.setPassword("typical123");
         user0.setBirthDay(new Date(97,3,22));
 
         User user1 = new User();
-        user1.setNick("UsErMonster");
+        user1.setUserName("UsErMonster");
         user1.setEmail("monser@xyz.com");
         user1.setLanguage("PL");
         user1.setPassword("qazwsxedc");
