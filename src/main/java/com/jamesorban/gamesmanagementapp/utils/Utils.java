@@ -1,4 +1,4 @@
-package com.jamesorban.mygamestore.utils;
+package com.jamesorban.gamesmanagementapp.utils;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
