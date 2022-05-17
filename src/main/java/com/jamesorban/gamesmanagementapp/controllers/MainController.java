@@ -1,4 +1,4 @@
-package com.jamesorban.mygamestore.controllers;
+package com.jamesorban.gamesmanagementapp.controllers;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -10,9 +10,9 @@ import javafx.scene.control.CheckMenuItem;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import com.jamesorban.mygamestore.database.models.User;
-import com.jamesorban.mygamestore.utils.DialogUtils;
-import com.jamesorban.mygamestore.utils.FxmlUtils;
+import com.jamesorban.gamesmanagementapp.database.models.User;
+import com.jamesorban.gamesmanagementapp.utils.DialogUtils;
+import com.jamesorban.gamesmanagementapp.utils.FxmlUtils;
 
 import java.io.IOException;
 import java.util.Optional;

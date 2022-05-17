@@ -1,4 +1,4 @@
-package com.jamesorban.mygamestore.modelFx;
+package com.jamesorban.gamesmanagementapp.modelFx;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -9,7 +9,7 @@ public class MenuModel {
 
 
     public void init(){
-        this.languages.add("ENG");
+        this.languages.add("ENGLISH");
         this.languages.add("DE");
         this.languages.add("SERBIAN");
     }

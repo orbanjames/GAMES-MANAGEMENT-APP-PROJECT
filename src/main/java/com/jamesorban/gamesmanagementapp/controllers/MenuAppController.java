@@ -1,14 +1,13 @@
-package com.jamesorban.mygamestore.controllers;
+package com.jamesorban.gamesmanagementapp.controllers;
 
 import javafx.application.Platform;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.Pane;
-import com.jamesorban.mygamestore.modelFx.MenuModel;
-import com.jamesorban.mygamestore.utils.DialogUtils;
-import com.jamesorban.mygamestore.utils.FxmlUtils;
+import com.jamesorban.gamesmanagementapp.modelFx.MenuModel;
+import com.jamesorban.gamesmanagementapp.utils.DialogUtils;
+import com.jamesorban.gamesmanagementapp.utils.FxmlUtils;
 
 import java.io.IOException;
 
