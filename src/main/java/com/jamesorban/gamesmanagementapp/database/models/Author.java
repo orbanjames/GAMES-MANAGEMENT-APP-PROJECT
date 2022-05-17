@@ -22,6 +22,9 @@ public class Author implements BaseModel {
 
     }
 
+    public Author(int id, String name, String game) {
+    }
+
 
     public int getId() {
         return id;
