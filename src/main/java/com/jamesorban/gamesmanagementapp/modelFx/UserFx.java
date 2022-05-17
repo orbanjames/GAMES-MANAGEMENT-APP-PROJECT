@@ -1,4 +1,4 @@
-package com.jamesorban.mygamestore.modelFx;
+package com.jamesorban.gamesmanagementapp.modelFx;
 
 import javafx.beans.property.*;
 
@@ -7,7 +7,7 @@ import java.time.LocalDate;
 public class UserFx {
 
     private IntegerProperty id = new SimpleIntegerProperty();
-    private SimpleStringProperty nick = new SimpleStringProperty();
+    private SimpleStringProperty userName = new SimpleStringProperty();
     private SimpleStringProperty email = new SimpleStringProperty();
     private SimpleStringProperty password = new SimpleStringProperty();
     private SimpleStringProperty language = new SimpleStringProperty();
@@ -26,16 +26,16 @@ public class UserFx {
         this.id.set(id);
     }
 
-    public String getNick() {
-        return nick.get();
+    public String getUserName() {
+        return userName.get();
     }
 
-    public SimpleStringProperty nickProperty() {
-        return nick;
+    public SimpleStringProperty userNameProperty() {
+        return userName;
     }
 
-    public void setNick(String nick) {
-        this.nick.set(nick);
+    public void setUserName(String userName) {
+        this.userName.set(userName);
     }
 
     public String getEmail() {

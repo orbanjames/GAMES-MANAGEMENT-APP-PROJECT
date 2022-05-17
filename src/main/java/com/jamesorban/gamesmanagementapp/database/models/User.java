@@ -1,4 +1,4 @@
-package com.jamesorban.mygamestore.database.models;
+package com.jamesorban.gamesmanagementapp.database.models;
 
 import com.j256.ormlite.dao.ForeignCollection;
 import com.j256.ormlite.field.DatabaseField;
@@ -10,7 +10,7 @@ import java.util.Date;
 @DatabaseTable(tableName = "USERS")
 public class User implements BaseModel {
 
-    public static final String NICK = "NICK";
+    public static final String USERNAME = "USERNAME";
     public static final String EMAIL = "EMAIL";
     public static final String PASSWORD = "PASSWORD";
 
@@ -20,8 +20,8 @@ public class User implements BaseModel {
     @ForeignCollectionField(eager = true)
     private ForeignCollection<Product> products;
 
-    @DatabaseField(columnName = NICK, canBeNull = false, unique = true)
-    private String nick;
+    @DatabaseField(columnName = USERNAME, canBeNull = false, unique = true)
+    private String userName;
 
     @DatabaseField(columnName = EMAIL, canBeNull = false, unique = true)
     private String email;
@@ -37,6 +37,9 @@ public class User implements BaseModel {
 
 
     public User() {
+    }
+
+    public User(String userName, String email, String password) {
     }
 
 
@@ -56,12 +59,12 @@ public class User implements BaseModel {
         this.id = id;
     }
 
-    public String getNick() {
-        return nick;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setNick(String nick) {
-        this.nick = nick;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getEmail() {
@@ -101,7 +104,7 @@ public class User implements BaseModel {
         return "User{" +
                 "id=" + id +
                 ", products=" + products +
-                ", nick='" + nick + '\'' +
+                ", userName='" + userName + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", language='" + language + '\'' +

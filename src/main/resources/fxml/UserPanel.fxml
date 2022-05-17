@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" minHeight="300.0" minWidth="200.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jamesorban.mygamestore.controllers.UserPanelController">
+<VBox alignment="CENTER" minHeight="300.0" minWidth="200.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jamesorban.gamesmanagementapp.controllers.UserPanelController">
     <children>
         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -25,7 +25,7 @@
                         <Image url="@../icons/user.png" />
                     </image>
                 </ImageView>
-                <Label fx:id="nickLabel">
+                <Label fx:id="userNameLabel">
                     <font>
                         <Font size="16.0" />
                     </font>

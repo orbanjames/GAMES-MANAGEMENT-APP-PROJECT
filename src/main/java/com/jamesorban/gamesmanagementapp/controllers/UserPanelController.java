@@ -1,15 +1,14 @@
-package com.jamesorban.mygamestore.controllers;
+package com.jamesorban.gamesmanagementapp.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import com.jamesorban.mygamestore.database.models.User;
-import com.jamesorban.mygamestore.modelFx.UserPanelModel;
-import com.jamesorban.mygamestore.utils.converters.ConverterUser;
+import com.jamesorban.gamesmanagementapp.database.models.User;
+import com.jamesorban.gamesmanagementapp.modelFx.UserPanelModel;
 
 public class UserPanelController {
 
     @FXML
-    private Label nickLabel;
+    private Label userNameLabel;
     @FXML
     private Label emailLabel;
     @FXML
@@ -24,7 +23,7 @@ public class UserPanelController {
     }
 
     public void setUser(User user){
-        this.nickLabel.setText(user.getNick());
+        this.userNameLabel.setText(user.getUserName());
         this.emailLabel.setText(user.getEmail());
         this.birthLabel.setText(user.getBirthDay().getDay() + "/" + user.getBirthDay().getMonth() + "/" + (1900 + user.getBirthDay().getYear()));
     }
