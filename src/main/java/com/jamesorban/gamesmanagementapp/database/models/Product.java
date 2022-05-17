@@ -27,6 +27,9 @@ public class Product implements BaseModel {
     public Product() {
     }
 
+    public Product(int myRating, String myOpinion) {
+    }
+
 
     public int getId() {
         return id;
