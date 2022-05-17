@@ -31,10 +31,10 @@ Project is created with:
 The appearance of the login panel and registration panel.
 During registration, the new user can choose the language in which the application will be displayed.
 
-src/main/resources/screens/login screen.png
-src/main/resources/screens/signup.png
+![](resources/screens/login.png)
+![](resources/screens/userSignup.png)
 
-After logging in, the user can go to the My games panel, in which there is a list of games added to the library.
+After logging in, the user can go to Rate games panel, in which there is a list of games added to the library.
 After selecting a game from the list, all information about this game is displayed.
 
-src/main/resources/screens/userPanel.png
+![](resources/screens/mainPage.png)
