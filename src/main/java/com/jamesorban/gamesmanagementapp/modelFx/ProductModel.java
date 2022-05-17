@@ -1,17 +1,17 @@
-package com.jamesorban.mygamestore.modelFx;
+package com.jamesorban.gamesmanagementapp.modelFx;
 
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import com.jamesorban.mygamestore.database.dao.GameDao;
-import com.jamesorban.mygamestore.database.dao.ProductDao;
-import com.jamesorban.mygamestore.database.models.Game;
-import com.jamesorban.mygamestore.database.models.Product;
-import com.jamesorban.mygamestore.database.models.User;
-import com.jamesorban.mygamestore.utils.converters.ConverterGame;
-import com.jamesorban.mygamestore.utils.converters.ConverterProduct;
-import com.jamesorban.mygamestore.utils.exceptions.ApplicationException;
+import com.jamesorban.gamesmanagementapp.database.dao.GameDao;
+import com.jamesorban.gamesmanagementapp.database.dao.ProductDao;
+import com.jamesorban.gamesmanagementapp.database.models.Game;
+import com.jamesorban.gamesmanagementapp.database.models.Product;
+import com.jamesorban.gamesmanagementapp.database.models.User;
+import com.jamesorban.gamesmanagementapp.utils.converters.ConverterGame;
+import com.jamesorban.gamesmanagementapp.utils.converters.ConverterProduct;
+import com.jamesorban.gamesmanagementapp.utils.exceptions.ApplicationException;
 
 import java.sql.SQLException;
 import java.util.List;

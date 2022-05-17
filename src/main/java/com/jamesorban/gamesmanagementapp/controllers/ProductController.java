@@ -1,17 +1,15 @@
-package com.jamesorban.mygamestore.controllers;
+package com.jamesorban.gamesmanagementapp.controllers;
 
-import javafx.application.Platform;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
-import com.jamesorban.mygamestore.modelFx.GameFx;
-import com.jamesorban.mygamestore.modelFx.ProductModel;
-import com.jamesorban.mygamestore.utils.DialogUtils;
-import com.jamesorban.mygamestore.utils.exceptions.ApplicationException;
+import com.jamesorban.gamesmanagementapp.modelFx.GameFx;
+import com.jamesorban.gamesmanagementapp.modelFx.ProductModel;
+import com.jamesorban.gamesmanagementapp.utils.DialogUtils;
+import com.jamesorban.gamesmanagementapp.utils.exceptions.ApplicationException;
 
 public class ProductController {
 
