@@ -1,14 +1,14 @@
-package com.jamesorban.mygamestore.controllers;
+package com.jamesorban.gamesmanagementapp.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-import com.jamesorban.mygamestore.database.models.User;
-import com.jamesorban.mygamestore.modelFx.MyGamesModel;
-import com.jamesorban.mygamestore.modelFx.ProductFx;
-import com.jamesorban.mygamestore.utils.DialogUtils;
-import com.jamesorban.mygamestore.utils.exceptions.ApplicationException;
+import com.jamesorban.gamesmanagementapp.database.models.User;
+import com.jamesorban.gamesmanagementapp.modelFx.MyGamesModel;
+import com.jamesorban.gamesmanagementapp.modelFx.ProductFx;
+import com.jamesorban.gamesmanagementapp.utils.DialogUtils;
+import com.jamesorban.gamesmanagementapp.utils.exceptions.ApplicationException;
 import java.sql.SQLException;
 
 public class MyGamesController {

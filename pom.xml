@@ -35,7 +35,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.jamesorban.mygamestore.App.Application</mainClass>
+                                    <mainClass>com.jamesorban.gamesmanagementapp.App.Application</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
@@ -58,6 +58,7 @@
             <version>1.1</version>
         </dependency>
         <!-- Thanks for using https://jar-download.com -->
+
 
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -115,6 +116,18 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>2.1.212</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

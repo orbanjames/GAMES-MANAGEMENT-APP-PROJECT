@@ -1,4 +1,4 @@
-package com.jamesorban.mygamestore.database.models;
+package com.jamesorban.gamesmanagementapp.database.models;
 
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
