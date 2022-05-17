@@ -1,4 +1,4 @@
-package com.jamesorban.mygamestore.modelFx;
+package com.jamesorban.gamesmanagementapp.modelFx;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -18,8 +18,8 @@ import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import com.jamesorban.mygamestore.controllers.MinesController;
-import com.jamesorban.mygamestore.modelFx.MinesFx.Point;
+import com.jamesorban.gamesmanagementapp.controllers.MinesController;
+import com.jamesorban.gamesmanagementapp.modelFx.MinesFx.Point;
 
 import java.io.IOException;
 

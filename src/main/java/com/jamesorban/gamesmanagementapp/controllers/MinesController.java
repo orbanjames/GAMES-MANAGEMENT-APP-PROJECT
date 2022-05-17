@@ -1,4 +1,4 @@
-package com.jamesorban.mygamestore.controllers;
+package com.jamesorban.gamesmanagementapp.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

@@ -1,4 +1,4 @@
-package com.jamesorban.mygamestore.modelFx;
+package com.jamesorban.gamesmanagementapp.modelFx;
 
 
 import javafx.application.Application;
@@ -19,7 +19,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import com.jamesorban.mygamestore.controllers.MinesController;
+import com.jamesorban.gamesmanagementapp.controllers.MinesController;
 
 import java.io.IOException;
 import java.util.HashSet;
