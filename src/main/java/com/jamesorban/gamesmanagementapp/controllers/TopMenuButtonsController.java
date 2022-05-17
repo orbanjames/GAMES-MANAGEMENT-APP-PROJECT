@@ -1,8 +1,7 @@
-package com.jamesorban.mygamestore.controllers;
+package com.jamesorban.gamesmanagementapp.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.ToggleGroup;
-import com.jamesorban.mygamestore.database.models.User;
 
 public class TopMenuButtonsController {
 

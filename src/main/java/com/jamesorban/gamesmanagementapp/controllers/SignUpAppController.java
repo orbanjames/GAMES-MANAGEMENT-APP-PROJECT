@@ -1,19 +1,19 @@
-package com.jamesorban.mygamestore.controllers;
+package com.jamesorban.gamesmanagementapp.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import com.jamesorban.mygamestore.database.models.User;
-import com.jamesorban.mygamestore.modelFx.SignUpModel;
-import com.jamesorban.mygamestore.utils.DialogUtils;
-import com.jamesorban.mygamestore.utils.FxmlUtils;
-import com.jamesorban.mygamestore.utils.exceptions.ApplicationException;
+import com.jamesorban.gamesmanagementapp.database.models.User;
+import com.jamesorban.gamesmanagementapp.modelFx.SignUpModel;
+import com.jamesorban.gamesmanagementapp.utils.DialogUtils;
+import com.jamesorban.gamesmanagementapp.utils.FxmlUtils;
+import com.jamesorban.gamesmanagementapp.utils.exceptions.ApplicationException;
 import java.util.Optional;
 
 public class SignUpAppController {
 
 
     @FXML
-    private TextField nickTextField;
+    private TextField userNameTextField;
     @FXML
     private TextField emailTextField;
     @FXML
@@ -40,7 +40,7 @@ public class SignUpAppController {
     }
 
     private void bindings() {
-        this.signUpModel.getUserFxObjectProperty().nickProperty().bind(this.nickTextField.textProperty());
+        this.signUpModel.getUserFxObjectProperty().userNameProperty().bind(this.userNameTextField.textProperty());
         this.signUpModel.getUserFxObjectProperty().emailProperty().bind(this.emailTextField.textProperty());
         this.signUpModel.getUserFxObjectProperty().passwordProperty().bind(this.passTextField.textProperty());
         this.signUpModel.getUserFxObjectProperty().languageProperty().bind(this.languageComboBox.valueProperty());
@@ -48,7 +48,7 @@ public class SignUpAppController {
 
         this.languageComboBox.setItems(this.signUpModel.getLanguages());
 
-        this.signUpButton.disableProperty().bind(this.signUpModel.getUserFxObjectProperty().nickProperty().isEmpty()
+        this.signUpButton.disableProperty().bind(this.signUpModel.getUserFxObjectProperty().userNameProperty().isEmpty()
                 .or(this.signUpModel.getUserFxObjectProperty().emailProperty().isEmpty())
                 .or(this.signUpModel.getUserFxObjectProperty().passwordProperty().isEmpty())
                 .or(this.signUpModel.getUserFxObjectProperty().languageProperty().isNull())
@@ -74,9 +74,9 @@ public class SignUpAppController {
     }
 
     private Boolean verifyUserInDaraBase(){
-        if(this.signUpModel.checkUser(User.NICK, this.signUpModel.getUserFxObjectProperty().getNick())){
-            this.nickTextField.setText(null);
-            this.nickTextField.setPromptText(FxmlUtils.getResourceBundle().getString("signup.valid.using.nick"));
+        if(this.signUpModel.checkUser(User.USERNAME, this.signUpModel.getUserFxObjectProperty().getUserName())){
+            this.userNameTextField.setText(null);
+            this.userNameTextField.setPromptText(FxmlUtils.getResourceBundle().getString("signup.valid.using.userName"));
             return false;
         }
 
@@ -90,9 +90,9 @@ public class SignUpAppController {
     }
 
     private Boolean validation() {
-        if(this.signUpModel.getUserFxObjectProperty().getNick().length() < 6){
-            this.nickTextField.setText(null);
-            this.nickTextField.setPromptText(FxmlUtils.getResourceBundle().getString("signup.valid.min.nick"));
+        if(this.signUpModel.getUserFxObjectProperty().getUserName().length() < 6){
+            this.userNameTextField.setText(null);
+            this.userNameTextField.setPromptText(FxmlUtils.getResourceBundle().getString("signup.valid.min.userName"));
             return false;
         }
 

@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jamesorban.mygamestore.controllers.SignUpAppController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jamesorban.gamesmanagementapp.controllers.SignUpAppController">
     <children>
         <ImageView fitHeight="637.0" fitWidth="1023.0" layoutX="-151.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -23,12 +23,12 @@
                 <Font name="System Bold Italic" size="24.0" />
             </font>
         </Label>
-        <Label layoutX="13.0" layoutY="73.0" text="%signup.nick" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="50.0">
+        <Label layoutX="13.0" layoutY="73.0" text="%signup.userName" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="50.0">
             <font>
                 <Font name="System Bold" size="20.0" />
             </font>
         </Label>
-        <TextField fx:id="nickTextField" layoutX="14.0" layoutY="78.0" prefHeight="26.0" prefWidth="250.0" promptText="%signup.nick.text" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="80.0" />
+        <TextField fx:id="userNameTextField" layoutX="14.0" layoutY="78.0" prefHeight="26.0" prefWidth="250.0" promptText="%signup.userName.text" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="80.0" />
         <Label layoutX="13.0" layoutY="156.0" text="%signup.email" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="120.0">
             <font>
                 <Font name="System Bold" size="20.0" />

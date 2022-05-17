@@ -8,7 +8,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jamesorban.mygamestore.controllers.TopMenuButtonsController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jamesorban.gamesmanagementapp.controllers.TopMenuButtonsController">
     <children>
         <ToggleButton minHeight="80.0" minWidth="150.0" mnemonicParsing="false" onAction="#openMyGamesLibrary" text="%my_games">
             <toggleGroup>
@@ -57,7 +57,7 @@
                 </ImageView>
             </graphic>
         </ToggleButton>
-        <ToggleButton minHeight="80.0" minWidth="150.0" mnemonicParsing="false" onAction="#playGame" text="%play_game" toggleGroup="$tougleButtons">
+        <ToggleButton minHeight="80.0" minWidth="150.0" mnemonicParsing="false" onAction="#playGame" text="%play_game" toggleGroup="$toggleButtons">
             <graphic>
                 <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                     <image>
