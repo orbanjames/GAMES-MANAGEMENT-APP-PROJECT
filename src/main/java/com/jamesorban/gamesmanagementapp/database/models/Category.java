@@ -21,6 +21,9 @@ public class Category implements BaseModel {
     public Category(){
     }
 
+    public Category(int id, String name) {
+    }
+
 
     public int getId() {
         return id;

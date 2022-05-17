@@ -31,10 +31,12 @@ Project is created with:
 The appearance of the login panel and registration panel.
 During registration, the new user can choose the language in which the application will be displayed.
 
-![](resources/screens/login.png)
-![](resources/screens/userSignup.png)
+![](login.png)
+
+![](signup.png)
+
 
 After logging in, the user can go to Rate games panel, in which there is a list of games added to the library.
 After selecting a game from the list, all information about this game is displayed.
 
-![](resources/screens/mainPage.png)
+![](mainPage.png)

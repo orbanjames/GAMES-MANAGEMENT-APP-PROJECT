@@ -45,6 +45,9 @@ public class Game implements BaseModel {
 
     }
 
+    public Game(int id, String title) {
+    }
+
 
     public int getId() {
         return id;
