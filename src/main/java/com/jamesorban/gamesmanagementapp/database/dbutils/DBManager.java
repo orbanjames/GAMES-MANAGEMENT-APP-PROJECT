@@ -69,11 +69,11 @@ public class DBManager {
 
     private  static  void  updateTable(){
         try {
-            TableUtils.dropTable(connectionSource, Author.class, true);
-            TableUtils.dropTable(connectionSource, Game.class, true);
-            TableUtils.dropTable(connectionSource, Category.class, true);
-            TableUtils.dropTable(connectionSource, User.class, true);
-            TableUtils.dropTable(connectionSource, Product.class, true);
+            TableUtils.updateTable(connectionSource, Author.class, true);
+            TableUtils.updateTable(connectionSource, Game.class, true);
+            TableUtils.updateTable(connectionSource, Category.class, true);
+            TableUtils.updateTable(connectionSource, User.class, true);
+            TableUtils.updateTable(connectionSource, Product.class, true);
         } catch (SQLException e) {
             LOGGER.warn(e.getMessage());
         }
