@@ -39,7 +39,7 @@ I use MySQL, for data storage and manipulation,
 
 I have created a database "GamesDB", and you can find the connection in the "DBManager class"
 
-String url = "jdbc:mySQL://localhost:3306/minesweeper";
+String url = "jdbc:mySQL://localhost:3306/GamesDB";
 
 String user = "root";
 
