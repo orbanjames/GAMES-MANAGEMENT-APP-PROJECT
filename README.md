@@ -1,10 +1,10 @@
 # Games Management App
 This is a project work for the course title: 
-SOFTWARE PROCESS (M09240) on Master studies submitted to the 
+SOFTWARE REQUIREMENTS AND MODELLING on Master studies submitted to the 
 Department of Software Engineering and Computer Science, 
 Faculty of Organisational Sciences, UNIVERSITY OF BELGRADE, SERBIA. 
 It is my first project experience fully implemented as a 
-window application created with java 11, javaFX technology and MySQL Database
+DESKTOP application created with java 11, javaFX technology and MySQL Database
 
 
 ## Table of contents
